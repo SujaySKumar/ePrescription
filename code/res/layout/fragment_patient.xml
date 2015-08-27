@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/pulse"
+    tools:context="com.example.code.PatientActivity$PlaceholderFragment" >
+
+    <Button
+        android:id="@+id/symptomSButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="126dp"
+        android:onClick="onClickSymptom"
+        android:text="New Symptoms" />
+
+    <Button
+        android:id="@+id/historyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/symptomSButton"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClickHistory"
+        android:text="Patient History" />
+
+    <Button
+        android:id="@+id/presButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/historyButton"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClickPrescription"
+        android:text="View Current Prescription" />
+
+     <Button
+         android:id="@+id/videoButton"
+         android:layout_width="50dp"
+         android:layout_height="40dp"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentLeft="true"
+         android:layout_marginBottom="34dp"
+         android:background="@drawable/hangout"
+         android:maxHeight="10dp"
+         android:maxWidth="10dp"
+         android:minHeight="10dp"
+         android:onClick="onClickVideo" />
+
+</RelativeLayout>

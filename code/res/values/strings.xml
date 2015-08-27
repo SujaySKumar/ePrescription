@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">#code</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_doctor">DoctorActivity</string>
+    <string name="title_activity_patient">PatientActivity</string>
+    <string name="title_activity_patient_history">PatientHistory</string>
+    <string name="title_activity_patient_history2">PatientHistory2</string>
+    <string name="title_activity_chronic_diseases">ChronicDiseases</string>
+    <string name="title_activity_heredity_disease">HeredityDisease</string>
+    <string name="title_activity_common_disease">CommonDisease</string>
+    <string name="title_activity_patient_prescription">PatientPrescription</string>
+    <string name="title_activity_symptom">SymptomActivity</string>
+    <string name="title_activity_new_symptoms">NewSymptoms</string>
+    <string name="title_activity_genetic">GeneticActivity</string>
+    <string name="title_activity_set_prescription">SetPrescription</string>
+    <string name="title_activity_read_prescription">ReadPrescription</string>
+
+</resources>

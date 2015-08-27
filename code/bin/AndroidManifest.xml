@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.code"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".DoctorActivity"
+            android:label="@string/title_activity_doctor" >
+        </activity>
+        <activity
+            android:name=".PatientActivity"
+            android:label="@string/title_activity_patient" >
+        </activity>
+        <activity
+            android:name=".PatientHistory"
+            android:label="@string/title_activity_patient_history" >
+        </activity>
+        <activity
+            android:name=".PatientHistory2"
+            android:label="@string/title_activity_patient_history2" >
+        </activity>
+        <activity
+            android:name=".ChronicDiseases"
+            android:label="@string/title_activity_chronic_diseases" >
+        </activity>
+        <activity
+            android:name=".HeredityDisease"
+            android:label="@string/title_activity_heredity_disease" >
+        </activity>
+        <activity
+            android:name=".CommonDisease"
+            android:label="@string/title_activity_common_disease" >
+        </activity>
+        <activity
+            android:name=".PatientPrescription"
+            android:label="@string/title_activity_patient_prescription" >
+        </activity>
+        <activity
+            android:name=".SymptomActivity"
+            android:label="@string/title_activity_symptom" >
+        </activity>
+        <activity
+            android:name=".NewSymptoms"
+            android:label="@string/title_activity_new_symptoms" >
+        </activity>
+        <activity
+            android:name=".GeneticActivity"
+            android:label="@string/title_activity_genetic" >
+        </activity>
+        <activity
+            android:name=".SetPrescription"
+            android:label="@string/title_activity_set_prescription" >
+        </activity>
+        <activity
+            android:name=".ReadPrescription"
+            android:label="@string/title_activity_read_prescription" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.code.SetPrescription$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set The Patient&apos;s Prescriptions:" />
+
+    <EditText
+        android:id="@+id/nameBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Patient Name"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameBox"
+        android:layout_below="@+id/nameBox"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Prescription"
+        android:inputType="textMultiLine" />
+ 	 <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="85dp"
+        android:onClick="onSendButton"
+        android:text="Send" />
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+ </RadioGroup>
+
+    <RadioButton
+        android:id="@+id/radioChronic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_marginBottom="42dp"
+        android:text="Chronic Disease" />
+
+    <RadioButton
+        android:id="@+id/radioHeredity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radioChronic"
+        android:layout_alignLeft="@+id/radioChronic"
+        android:text="Heredity Disease" />
+
+    <RadioButton
+        android:id="@+id/radioCommon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radioHeredity"
+        android:layout_alignLeft="@+id/radioHeredity"
+        android:text="Communicable Disease" />
+
+</RelativeLayout>

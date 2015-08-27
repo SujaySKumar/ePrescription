@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.code.PatientHistory$PlaceholderFragment" >
+
+    <Button
+        android:id="@+id/chronicButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg3"
+        android:gravity="center_vertical|center_horizontal|bottom|right"
+        android:minHeight="25dip"
+        android:minWidth="30dip"
+        android:onClick="onClickChronic"
+        android:text="Chronic"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:typeface="sans" />
+
+    <Button
+        android:id="@+id/commButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chronicButton"
+        android:layout_alignRight="@+id/chronicButton"
+        android:layout_below="@+id/chronicButton"
+        android:background="@drawable/bg2"
+        android:gravity="center_vertical|center_horizontal|end|bottom"
+        android:onClick="onClickCommunicable"
+        android:text="Communicable"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:typeface="sans" />
+
+    <Button
+        android:id="@+id/heredityButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/commButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/commButton"
+        android:layout_below="@+id/commButton"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg1"
+        android:gravity="center_vertical|center_horizontal|bottom|right"
+        android:onClick="onClickHeredity"
+        android:text="Genetic"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:typeface="sans" />
+
+    
+        <requestFocus />
+
+</RelativeLayout>
